@@ -1,0 +1,197 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #7e217d; /* Warna ungu muda untuk header */
+    color: #ffd600;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd600;
+}
+
+main {
+    padding: 20px;
+}
+
+.home-section,
+.about-section,
+.contact-section,
+.albums-section {
+    background-color: #ffd600; /* Latar belakang putih untuk section */
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.984);
+}
+
+.album {
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    background-color: #7e217d; /* Warna ungu muda untuk album */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.album img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.album:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #7e217d;
+    color: #ffd600;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.album h3,
+.album p {
+    color: #fff; /* Mengubah warna teks pada elemen h3 dan p di dalam album */
+}
+
+.album h3,
+.album p {
+    color: #fff;
+    transition: color 0.3s ease; /* Menambahkan transisi warna saat hover */
+}
+
+.album:hover h3,
+.album:hover p {
+    color: #ffd600; /* Warna kuning saat hover */
+}
+
+.about-section {
+    position: relative;
+}
+
+.description {
+    display: none;
+    padding-top: 20px;
+    transition: opacity 0.3s ease; /* Animasi opacity saat muncul */
+}
+
+.about-section.active .description {
+    display: block;
+    opacity: 1;
+}
+
+.about-section {
+    position: relative;
+    transition: transform 0.3s ease; /* Animasi scaling saat hover */
+}
+
+.about-section:hover {
+    transform: scale(1.02); /* Efek scaling saat kursor di atasnya */
+}
+
+.add-description-btn {
+    cursor: pointer;
+    margin-top: 10px;
+    color: #007bff; /* Warna biru untuk tombol */
+}
+
+.album-description {
+    display: none;
+    padding-top: 10px;
+    transition: opacity 0.3s ease; /* Animasi opacity saat muncul */
+}
+
+.album.active .album-description {
+    display: block;
+    opacity: 1;
+}
+
+.add-description-btn,
+.close-description-btn {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-description-btn {
+    background-color: #ffd600; /* Warna biru untuk tombol buka */
+    color: #000; /* Warna teks putih */
+}
+
+.close-description-btn {
+    background-color: #ffd600; /* Warna merah untuk tombol tutup */
+    color: #000; /* Warna teks putih */
+}
+
+.add-description-btn:hover,
+.close-description-btn:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
+
+.contact-section {
+    background-color: #ffd600; /* Tetap menggunakan latar belakang abu-abu muda */
+    padding: 50px 0;
+}
+
+.contact-info {
+    text-align: center;
+    color:#7e217d;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #000; /* Warna teks abu-abu */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    font-size: 30px;
+    color: #7e217d; /* Warna biru */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #7e217d; /* Warna biru lebih gelap saat dihover */
+}
+
+
+
+
